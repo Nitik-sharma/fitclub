@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-menu > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+.bars {
+  background-color: var(--appColor);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.bars > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .header-menu {
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+  }
+}
